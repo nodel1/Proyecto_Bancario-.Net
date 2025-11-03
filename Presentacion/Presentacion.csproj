@@ -1,0 +1,317 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6385C3AB-C543-4593-86BB-873C25B0CD2D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Presentacion</RootNamespace>
+    <AssemblyName>Presentacion</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FAltaCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FAltaCliente.Designer.cs">
+      <DependentUpon>FAltaCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FAltaMovimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FAltaMovimiento.Designer.cs">
+      <DependentUpon>FAltaMovimiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fclave.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fclave.Designer.cs">
+      <DependentUpon>Fclave.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FClaveMovimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FClaveMovimiento.Designer.cs">
+      <DependentUpon>FClaveMovimiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FClienteDatos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FClienteDatos.Designer.cs">
+      <DependentUpon>FClienteDatos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FCrearCuenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FCrearCuenta.Designer.cs">
+      <DependentUpon>FCrearCuenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FCuentaDatos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FCuentaDatos.Designer.cs">
+      <DependentUpon>FCuentaDatos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FCuentasCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FCuentasCliente.Designer.cs">
+      <DependentUpon>FCuentasCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FEstasSeguro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FEstasSeguro.Designer.cs">
+      <DependentUpon>FEstasSeguro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FFecha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FFecha.Designer.cs">
+      <DependentUpon>FFecha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FFechaRango.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FFechaRango.Designer.cs">
+      <DependentUpon>FFechaRango.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FFechaYHora.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FFechaYHora.Designer.cs">
+      <DependentUpon>FFechaYHora.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FListadoClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FListadoClientes.Designer.cs">
+      <DependentUpon>FListadoClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FListadoClientesOrdenado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FListadoClientesOrdenado.Designer.cs">
+      <DependentUpon>FListadoClientesOrdenado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FListadoCuentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FListadoCuentas.Designer.cs">
+      <DependentUpon>FListadoCuentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FListadoMovimientos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FListadoMovimientos.Designer.cs">
+      <DependentUpon>FListadoMovimientos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLogin.Designer.cs">
+      <DependentUpon>FLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FMovimientoDatos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FMovimientoDatos.Designer.cs">
+      <DependentUpon>FMovimientoDatos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRecorridoCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRecorridoCliente.Designer.cs">
+      <DependentUpon>FRecorridoCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRecorridoCuenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRecorridoCuenta.Designer.cs">
+      <DependentUpon>FRecorridoCuenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRecorridoMovimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRecorridoMovimiento.Designer.cs">
+      <DependentUpon>FRecorridoMovimiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PRAdministrador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRAdministrador.Designer.cs">
+      <DependentUpon>PRAdministrador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PREmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PREmpleado.Designer.cs">
+      <DependentUpon>PREmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PRVentanilla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRVentanilla.Designer.cs">
+      <DependentUpon>PRVentanilla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TipoFormulario.cs" />
+    <EmbeddedResource Include="FAltaCliente.resx">
+      <DependentUpon>FAltaCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FAltaMovimiento.resx">
+      <DependentUpon>FAltaMovimiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fclave.resx">
+      <DependentUpon>Fclave.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FClaveMovimiento.resx">
+      <DependentUpon>FClaveMovimiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FClienteDatos.resx">
+      <DependentUpon>FClienteDatos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FCrearCuenta.resx">
+      <DependentUpon>FCrearCuenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FCuentaDatos.resx">
+      <DependentUpon>FCuentaDatos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FCuentasCliente.resx">
+      <DependentUpon>FCuentasCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FEstasSeguro.resx">
+      <DependentUpon>FEstasSeguro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FFecha.resx">
+      <DependentUpon>FFecha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FFechaRango.resx">
+      <DependentUpon>FFechaRango.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FFechaYHora.resx">
+      <DependentUpon>FFechaYHora.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FListadoClientes.resx">
+      <DependentUpon>FListadoClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FListadoClientesOrdenado.resx">
+      <DependentUpon>FListadoClientesOrdenado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FListadoCuentas.resx">
+      <DependentUpon>FListadoCuentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FListadoMovimientos.resx">
+      <DependentUpon>FListadoMovimientos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLogin.resx">
+      <DependentUpon>FLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FMovimientoDatos.resx">
+      <DependentUpon>FMovimientoDatos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRecorridoCliente.resx">
+      <DependentUpon>FRecorridoCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRecorridoCuenta.resx">
+      <DependentUpon>FRecorridoCuenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRecorridoMovimiento.resx">
+      <DependentUpon>FRecorridoMovimiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRAdministrador.resx">
+      <DependentUpon>PRAdministrador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PREmpleado.resx">
+      <DependentUpon>PREmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="PRVentanilla.resx">
+      <DependentUpon>PRVentanilla.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LNCliente\LNCliente.csproj">
+      <Project>{f9b74eaf-bc58-4f07-9fe9-a3407b686371}</Project>
+      <Name>LNCliente</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LNCuenta\LNCuenta.csproj">
+      <Project>{0862b1b5-1e2f-49e6-b198-9c0e6a749b9c}</Project>
+      <Name>LNCuenta</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LNMovimiento\LNMovimiento.csproj">
+      <Project>{687511ef-35bb-4401-9b2f-067ffab9a985}</Project>
+      <Name>LNMovimiento</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LN\LN.csproj">
+      <Project>{3ed411c3-3b51-4e9f-acf3-bc386c644260}</Project>
+      <Name>LN</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MD\MD.csproj">
+      <Project>{fcfb8888-8fd7-4edb-9d78-9a3487d6b01c}</Project>
+      <Name>MD</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
